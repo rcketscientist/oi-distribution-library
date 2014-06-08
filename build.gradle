@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.7.+'
+        classpath 'com.android.tools.build:gradle:0.9.+'
     }
 }
 
@@ -19,11 +19,6 @@ android {
         targetSdkVersion 2
     }
 
-    release {
-        runProguard false
-        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-    }
-	
 	sourceSets {
 		main {
 			manifest.srcFile 'AndroidManifest.xml'
